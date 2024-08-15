@@ -17,7 +17,7 @@
       <form class="form-signin" action="/login" method="POST">
         <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
         <img class="mb-4" src="{{ url_for('static', filename='fondos/LogoSICOVO.png')}}" alt="" height="120">
-        <h1 class="h3 mb-3 fw-normal"> Start Sesion</h1>
+        <h1 class="h3 mb-3 fw-normal"> Inicio de Sesi&oacute;n</h1>
 
         <div class="form-floating">
           <label for="usuario">Usuario</label>
@@ -34,7 +34,7 @@
 
         <br />
         <br />
-        <a href="{{ url_for('registroUsuario') }}">Nuevo cliente</a>
+        <a href="{{ url_for('registroUsuario') }}">Registrar Nuevo Usuario</a>
         <br />
         {% with messages = get_flashed_messages(with_categories=True) %}
 
